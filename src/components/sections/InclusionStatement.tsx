@@ -1,4 +1,5 @@
 import ValueCard from '../ui/ValueCard';
+import prideFlag from '/assets/images/Progress_Pride_Flag.svg';
 
 export default function InclusionStatement() {
   return (
@@ -32,6 +33,15 @@ export default function InclusionStatement() {
             description="We creatively adapt our services to meet the unique needs and goals of each client."
           />
         </div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '25px' }}>
+        <img
+          src={prideFlag}
+          alt="Progress_Pride_Flag"
+          fetchPriority="low"
+          loading="lazy"
+          width={200}
+        />
       </div>
     </section>
   );
