@@ -7,6 +7,7 @@ import AboutEALEAPPage from './pages/AboutEALEAPPage';
 import ServicesPage from './pages/ServicesPage';
 import MeetTheHorsesPage from './pages/MeetTheHorsesPage';
 import ContactUsPage from './pages/ContactUsPage';
+import EventsPage from './pages/events.tsx';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/equine-services" element={<AboutEALEAPPage />} />
+          <Route path="/events" element={<EventsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/horses" element={<MeetTheHorsesPage />} />
           <Route path="/contact" element={<ContactUsPage />} />

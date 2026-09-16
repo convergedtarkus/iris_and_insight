@@ -23,6 +23,12 @@ export interface Workshop {
   cutoff: Date;
   // The url to the signup for the workshop.
   signupUrl?: string;
+  // If the workshop should be shown.
+  shouldShow: (cutoffDate: Date) => boolean;
+}
+
+function shouldShow(cutOffDate: Date): boolean {
+  return new Date() < cutOffDate;
 }
 
 export const services: Service[] = [
@@ -130,6 +136,7 @@ export const services: Service[] = [
         cutoff: new Date('2026-10-01T00:00:00-05:00'),
         signupUrl:
           'https://docs.google.com/forms/d/e/1FAIpQLSexGjv1HJSG5GziIynwDSdfdQZyUlZ2f7i4iMGclmFPF0Jgcg/viewform',
+        shouldShow,
       },
       {
         name: "You're Invited to Our Open House!",
@@ -139,6 +146,7 @@ export const services: Service[] = [
         image: '/assets/images/workshops/10-9-26-OpenHouse.png',
         // cutoff must be in the format of yyyy-mm-ddThh:mm:ss-hh:hh
         cutoff: new Date('2026-10-09T00:00:00-05:00'),
+        shouldShow,
       },
       {
         name: 'Stronger Together: Building Connection Through Horses',
@@ -151,6 +159,7 @@ export const services: Service[] = [
         cutoff: new Date('2026-10-08T00:00:00-05:00'),
         signupUrl:
           'https://docs.google.com/forms/d/e/1FAIpQLSdO4rS9j0EGk1i1w8Oea5zMGruuK6cKhSc5BcYDeQJ3EmR8HA/viewform',
+        shouldShow,
       },
       {
         name: "The Seasons Within Women's Workshop",
@@ -162,6 +171,7 @@ export const services: Service[] = [
         cutoff: new Date('2026-10-09T00:00:00-05:00'),
         signupUrl:
           'https://docs.google.com/forms/d/e/1FAIpQLSd-sCQOkF89OxXZBQAnWyiXzY4Eie2gIenQAFjn46JdWr1WmA/viewform',
+        shouldShow,
       },
     ],
     footer: 'Contact us directly to ask about availability, scheduling, and pricing.',

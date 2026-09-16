@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import SectionHeading from '../components/ui/SectionHeading';
 import Card from '../components/ui/Card';
-import { services, clientTags, type Workshop } from '../data/services';
+import { services, clientTags } from '../data/services';
+import makeWorkshops from '../components/workshopsElement.tsx';
 
 export default function ServicesPage() {
   const [openService, setOpenService] = useState<string | null>(null);
@@ -143,49 +144,5 @@ export default function ServicesPage() {
         </div>
       </section>
     </>
-  );
-}
-
-// Takes in a list of Workshop elements and creates a div to hold them all.
-function makeWorkshops(panelId: string, workshops: Workshop[]) {
-  const children = [];
-  for (const workshop of workshops) {
-    children.push(makeWorkshopElement(panelId, workshop));
-  }
-
-  return <div className="container">{children}</div>;
-}
-
-// Takes in a single Workshop and makes the div element for its information.
-function makeWorkshopElement(panelId: string, workshop: Workshop) {
-  return (
-    <div id={panelId} className="mt-5 pt-5 border-t border-brand-gray-light text-center">
-      {workshop && new Date() < workshop.cutoff && (
-        <>
-          <p>{workshop.name}</p>
-          <p>{workshop.date}</p>
-          {workshop.dateNotes != null && <p>{workshop.dateNotes}</p>}
-          <img
-            src={workshop.image}
-            alt="Workshop Flyer"
-            fetchPriority="high"
-            loading="eager"
-            width={900}
-            height={1200}
-          />
-          {workshop.signupUrl != null && (
-            <a
-              href={workshop.signupUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="inline-block bg-brand-teal text-brand-white font-body text-sm font-medium px-5 py-2 rounded-full hover:bg-brand-teal-dark transition-colors duration-150"
-            >
-              Register
-            </a>
-          )}
-        </>
-      )}
-    </div>
   );
 }
