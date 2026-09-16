@@ -281,7 +281,6 @@ export const routes = [
   { path: '/history', label: 'History', component: HistoryPage },
   { path: '/equine-services', label: 'About EAL/EAP', component: AboutEALEAPPage },
   { path: '/services', label: 'Services', component: ServicesPage },
-  { path: '/horses', label: 'Meet the Horses', component: MeetTheHorsesPage },
   { path: '/contact', label: 'Contact Us', component: ContactUsPage },
 ];
 ```
