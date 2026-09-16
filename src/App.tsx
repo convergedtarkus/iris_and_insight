@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
-import AboutUsPage from './pages/AboutUsPage';
 import HistoryPage from './pages/HistoryPage';
 import AboutEALEAPPage from './pages/AboutEALEAPPage';
 import ServicesPage from './pages/ServicesPage';
 import MeetTheHorsesPage from './pages/MeetTheHorsesPage';
 import ContactUsPage from './pages/ContactUsPage';
 import EventsPage from './pages/events.tsx';
+import OurTeam from './pages/OurTeamPage.tsx';
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/equine-services" element={<AboutEALEAPPage />} />
           <Route path="/events" element={<EventsPage />} />

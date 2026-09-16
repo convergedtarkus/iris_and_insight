@@ -240,7 +240,7 @@ iris-and-insight/
 │   │       └── ContactForm.tsx     # Name, email, message, submit
 │   ├── pages/
 │   │   ├── HomePage.tsx
-│   │   ├── AboutUsPage.tsx
+│   │   ├── OurTeamPage.tsx
 │   │   ├── HistoryPage.tsx
 │   │   ├── AboutEALEAPPage.tsx
 │   │   ├── ServicesPage.tsx
@@ -815,7 +815,7 @@ Execute in this exact sequence. Each phase must be complete before the next begi
 
 ### Phase 5: Interior Pages (in order)
 
-1. Build `AboutUsPage.tsx` — bio cards, placeholders
+1. Build `OurTeamPage.tsx` — bio cards, placeholders
 2. Build `HistoryPage.tsx` — narrative blocks with photos
 3. Build `AboutEALEAPPage.tsx` — content cards
 4. Build `ServicesPage.tsx` — who we serve, service grid, tags

@@ -3,11 +3,11 @@ import SectionHeading from '../components/ui/SectionHeading';
 import Card from '../components/ui/Card';
 import { team } from '../data/team';
 
-export default function AboutUsPage() {
+export default function OurTeam() {
   return (
     <>
       <Helmet>
-        <title>About Us | Iris + Insight</title>
+        <title>Our Team | Iris + Insight</title>
         <meta
           name="description"
           content="Meet Kelsey and Sareena — two licensed therapists passionate about equine-assisted services."

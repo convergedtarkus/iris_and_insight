@@ -5,7 +5,7 @@ export interface RouteConfig {
 
 export const routes: RouteConfig[] = [
   { path: '/', label: 'Home' },
-  { path: '/about', label: 'About Us' },
+  { path: '/our-team', label: 'Our Team' },
   { path: '/history', label: 'History' },
   { path: '/equine-services', label: 'About EAL/EAP' },
   { path: '/services', label: 'Services' },
