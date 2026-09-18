@@ -1,5 +1,5 @@
 import ValueCard from '../ui/ValueCard';
-import prideFlag from '/assets/images/Progress_Pride_Flag.svg';
+import prideHorseshoes from '/assets/images/pride_horseshoes _nobackground.png';
 
 export default function InclusionStatement() {
   return (
@@ -36,11 +36,11 @@ export default function InclusionStatement() {
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '25px' }}>
         <img
-          src={prideFlag}
-          alt="Progress_Pride_Flag"
+          src={prideHorseshoes}
+          alt="Collection of pride collected horseshoes"
           fetchPriority="low"
           loading="lazy"
-          width={200}
+          width={150}
         />
       </div>
     </section>
