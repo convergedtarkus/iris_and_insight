@@ -138,6 +138,18 @@ export const services: Service[] = [
           'https://docs.google.com/forms/d/e/1FAIpQLSff1uZf265smMUZ3U7OG7Q_d1pxbj4EPbWQlmPhyP_JsXES2A/viewform',
         shouldShow,
       },
+      {
+        name: 'Beyond the Office: Exploring the Power of Equine-Assisted Learning',
+        date: 'November 21, 2026 9:30AM to 11:30AM',
+        // Must point to an image in the public folder in the form /assets/path/to/image.jpg
+        // Be warned, a slash (/) in the file name is converted to a colon (:).
+        image: '/assets/images/workshops/11-21-26-StudentAndProfessional.PNG',
+        // cutoff must be in the format of yyyy-mm-ddThh:mm:ss-hh:hh
+        cutoff: new Date('2026-11-13T00:00:00-05:00'),
+        signupUrl:
+          'https://docs.google.com/forms/d/e/1FAIpQLSfzAmzOUmNI63qxRag5QyTlzzp8YrOlNiYnpB-pCcs478OZQA/viewform',
+        shouldShow,
+      },
     ],
     footer: 'Contact us directly to ask about availability, scheduling, and pricing.',
   },
