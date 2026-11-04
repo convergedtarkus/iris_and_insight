@@ -129,6 +129,7 @@ export const services: Service[] = [
       {
         name: 'Beyond the Office: Exploring the Power of Equine-Assisted Learning',
         date: 'November 20, 2026 2PM to 4PM',
+        dateNotes: 'Spots full. Contact directly to be placed on the waitlist.',
         // Must point to an image in the public folder in the form /assets/path/to/image.jpg
         // Be warned, a slash (/) in the file name is converted to a colon (:).
         image: '/assets/images/workshops/11-20-26-StudentAndProfessional.png',
