@@ -151,6 +151,16 @@ export const services: Service[] = [
           'https://docs.google.com/forms/d/e/1FAIpQLSfzAmzOUmNI63qxRag5QyTlzzp8YrOlNiYnpB-pCcs478OZQA/viewform',
         shouldShow,
       },
+      {
+        name: 'Hooves For The Holiday',
+        date: 'December 5th or 11th',
+        // Must point to an image in the public folder in the form /assets/path/to/image.jpg
+        // Be warned, a slash (/) in the file name is converted to a colon (:).
+        image: '/assets/images/workshops/12-5-26-HoovesForTheHoliday.PNG',
+        // cutoff must be in the format of yyyy-mm-ddThh:mm:ss-hh:hh
+        cutoff: new Date('2026-12-10T00:00:00-05:00'),
+        shouldShow,
+      },
     ],
     footer: 'Contact us directly to ask about availability, scheduling, and pricing.',
   },
